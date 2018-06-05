@@ -1,6 +1,9 @@
 # Unity Project Style Guide
 A style guide for keeping your Unity projects tidy and organized. Compiled from several best practices resources (see the resources section at the end of the document).
 
+## Unity Project Template
+This style guide now includes a Unity project template with minimal setup according to this guide and the new .NET4.0 scripting runtime version and Api compatibility activated.
+
 ## Files, Folders and Project Structure
 
 ### Naming 
