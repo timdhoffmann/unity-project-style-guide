@@ -49,6 +49,10 @@ Do *not use* this convention just to *distinguish* between *different types* of 
     - For entire packs, mark the top folder of the asset pack.
     - Assets that come as individual files can be marked directly.
 
+#### Working with assets from the asset store
+- **Leave any complex asset package files, where they imported to by default.** This makes updating and keeping track easier. 
+- **When making modifications**, copy the file(s) you want to modify (script, art, etc.), to an appropriate subfolder in *_Project*. **Make only changes to that copy** and make the other parts reference the newly created, modified file. 
+
 #### Project directory structure (strictly functionality/entity-based):
 
 ```
