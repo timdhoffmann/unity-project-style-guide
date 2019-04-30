@@ -55,12 +55,15 @@ Do *not use* this convention just to *distinguish* between *different types* of 
 
 #### Project directory structure (strictly functionality/entity-based):
 
-```
+```Cpp
 Assets
-    __NoVersionControl      // Container for temporary stuff, not under version control. More clear???
-    _Project                // All custom files.               
+    __NoVersionControl      // Container for temporary stuff, not under version control.
+    _Project                // All custom production files that are supposed to be in the product.
+        Core
+            Managers
+            ...
         Characters
-            Enemy           // Can have sub-folders or not (see "Save searches as context sensitive filters).       
+            Enemy           // Can have sub-folders or not (see "Save searches as context sensitive filters).
             Player
             ...
         Environment
@@ -69,7 +72,6 @@ Assets
         Props
             Weapons
             ...
-        Managers
         Scenes
         TestScripts
         UI
@@ -82,10 +84,10 @@ Assets
 
 Prefab everything!
 
-```
+```Cpp
 Main
 Debug
-Managers 
+Managers
 Cameras
 Lights
 UI
@@ -108,13 +110,14 @@ _DynamicObjects     // Parent for all objects instantiated at runtime.
 
 ## Coding Standard (C#)
 
-- Use camelCase for fields and variables. 
+Use _camelCase_ for fields and variables. _Fields_ have a leading underscore to distinguish them from local variables.
 
-  Example: 
+  Example:
+
   ```CSharp
-  private RigidBody rigidBody;
+  private RigidBody _rigidBody;  // Field.
 
-  private int length; 
+  var int length; // Local variable. 
   ```
 
 ---
